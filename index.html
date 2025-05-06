@@ -56,16 +56,30 @@
 #services-1724::before {
   content: "";
   position: absolute;
-  top: 20;
-  left: 100;
+  top: 20px;
+  left: 100px;
   width: 500px;
   height: 420px;
   background-image: url('images/hgse.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: top left;
   opacity: 0.7;
   z-index: 0;
 }
+
+/* Mobile Responsive Fix */
+@media (max-width: 600px) {
+  #services-1724::before {
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    height: auto;
+    background-position: center top;
+  }
+}
+
 
 
 /* Ensure content stays above background */
