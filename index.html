@@ -645,7 +645,27 @@ body {
         text-decoration: none;
         border-radius: 6px;
       }
-      
+     .li-header-img {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+@media (max-width: 600px) {
+  .header-row {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .li-header-img {
+    max-width: 80%;
+    margin-top: 10px;
+  }
+}
+ 
      
       </style>
       
