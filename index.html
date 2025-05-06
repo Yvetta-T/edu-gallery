@@ -960,6 +960,50 @@ body {
     text-decoration: none;
     border-radius: 6px;
   }
+/* For horizontal images */
+.horizontal-img, .horizontal-img-1, .image-grid img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 16px auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* For embedded videos */
+.cs-video {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 20px auto;
+  display: block;
+  border-radius: 10px;
+}
+.profile-feature {
+  padding: 20px 16px;
+}
+@media (max-width: 600px) {
+  .profile-feature h2,
+  .text-overlay h2 {
+    font-size: 1.5rem;
+  }
+
+  .text-overlay p,
+  .cs-text {
+    font-size: 1rem;
+    padding: 12px;
+  }
+
+  .image-grid {
+    gap: 12px;
+  }
+}
+.image-row {
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
 
   </style>
   
